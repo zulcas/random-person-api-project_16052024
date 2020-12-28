@@ -31,18 +31,19 @@ function getData(response, callback) {
     name: { first },
     name: { last },
     picture: { large },
-    location: { street },
     phone,
     email
   } = data.results[0];
 
-  callback(first, last, large, street, phone, email);
+  const location = data.results[0].location.country;
+
+  callback(first, last, large, location, phone, email);
 }
-function showData(first, last, large, street, phone, email) {
+function showData(first, last, large, country, phone, email) {
   document.getElementById("first").textContent = first;
   document.getElementById("last").textContent = last;
-  document.getElementById("street").textContent = street;
   document.getElementById("phone").textContent = phone;
+  document.getElementById("country").textContent = country;
   document.getElementById("email").textContent = email;
   document.getElementById("photo").src = large;
 }
