@@ -6,7 +6,7 @@ Disponemos de una API https://randomuser.me/api/ que cada vez que la invocamos, 
 
 Mapea los datos de dicha persona tal como se aprecia en esta [Demo](https://js-beginners.github.io/random-person-api-project/)
 
-NOTA: El campo Country no está en la demo, pero tú si deberías mapearlo.
+NOTA: El campo Location/Country no está en la demo, pero tú si deberías mapearlo.
 
 ## NUEVOS REQUISITOS 2022
 
